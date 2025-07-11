@@ -49,6 +49,7 @@ export function Education() {
                     <span className="text-blue-500 mr-2 mt-1">•</span>
                     Head of Live Production at UI Battlegrounds 2023
                   </li>
+                  
                 </ul>
               </div>
             </div>
@@ -61,7 +62,7 @@ export function Education() {
                 <span>🎓</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-100 mb-2">High School Diploma</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-gray-100 mb-2">High School</h3>
                 <p className="text-gray-300 mb-1">SMAN 42 Jakarta</p>
                 <span className="text-sm text-gray-400">2019 - 2022</span>
               </div>
