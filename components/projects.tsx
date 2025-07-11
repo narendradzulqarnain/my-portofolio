@@ -79,6 +79,16 @@ export function Projects() {
       liveUrl: "",
       githubUrl: "https://github.com/narendradzulqarnain/song-lyrics-clustering",
       technologies: ["Python", "NLP", "Clustering", "Data Analysis", "Web Scraping"],
+    },
+    {
+      id: 8,
+      title: "Marmut - Music & Podcast Streaming Platform",
+      category: "web",
+      description: "Developed key backend features for a music and podcast streaming platform, including user authentication, podcast management, and Top 20 charts.",
+      image: "/images/marmut.png",
+      liveUrl: "",
+      githubUrl: "https://github.com/basdat-c1/marmut/tree/dev-coba",
+      technologies: ["Django", "SQL", "PostgreSQL", "Python"]
     }
   ]
 
@@ -136,7 +146,7 @@ export function Projects() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-100 mb-3">{project.title}</h3>
-                <p className="text-gray-300 mb-4 line-clamp-4">{project.description}</p>
+                <p className="text-gray-300 mb-4 line-clamp-5">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.slice(0, 5).map((tech, index) => (
                     <span key={index} className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm font-medium border border-blue-500/20">
