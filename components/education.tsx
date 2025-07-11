@@ -17,7 +17,7 @@ export function Education() {
                 <span>🎓</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-semibold text-gray-100 mb-2">Bachelor of Science in Computer Science</h3>
+                <h3 className="text-xl md:text-2xl font-semibold text-gray-100 mb-2">Bachelor of Computer Science</h3>
                 <p className="text-gray-300 mb-1">Universitas Indonesia</p>
                 <span className="text-sm text-gray-400">2022 - 2026 (Expected)</span>
               </div>
