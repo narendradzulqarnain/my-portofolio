@@ -56,8 +56,8 @@ export function Projects() {
       category: "web",
       description: "Personal portfolio built with Next.js, showcasing projects and skills",
       image: "/images/portofolio.png",
-      liveUrl: "https://your-portfolio.com",
-      githubUrl: "https://github.com/narendradz/portfolio",
+      liveUrl: "https://narendra-dz-portofolio.vercel.app/",
+      githubUrl: "https://github.com/narendradzulqarnain/my-portofolio",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     },
     {
