@@ -11,7 +11,7 @@ export function Hero() {
   const [isDeleting, setIsDeleting] = useState(false)
   const [isMounted, setIsMounted] = useState(false)
 
-  const typedTexts = ["Data Scientist", "Machine Learning Enthusiast", "AI Enthusiast"]
+  const typedTexts = ["Data Science Enthusiast", "Machine Learning Enthusiast", "AI Enthusiast"]
 
   useEffect(() => {
     setIsMounted(true)
