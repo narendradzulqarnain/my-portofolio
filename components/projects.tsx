@@ -74,11 +74,11 @@ export function Projects() {
       id: 7,
       title: "Comparative Analysis of Clustering Algorithms for Song Lyrics Clustering",
       category: "other",
-      description: "Conducted a comparative analysis of clustering algorithms to cluster song lyrics based on their semantic similarity.",
+      description: "Conducted a comparative analysis of clustering algorithms to cluster song lyrics based on their semantic similarity, following the CRISP-DM methodology.",
       image: "/images/lyrics_clustering.png",
       liveUrl: "",
       githubUrl: "https://github.com/narendradzulqarnain/song-lyrics-clustering",
-      technologies: ["Python", "NLP", "Clustering", "Data Analysis", "Web Scraping"],
+      technologies: ["Python", "NLP", "Clustering", "Data Analysis", "Web Scraping", "CRISP-DM"],
     },
     {
       id: 8,
@@ -89,6 +89,16 @@ export function Projects() {
       liveUrl: "",
       githubUrl: "https://github.com/basdat-c1/marmut/tree/dev-coba",
       technologies: ["Django", "SQL", "PostgreSQL", "Python"]
+    },
+    {
+      id: 9,
+      title: "Online Thrift Store - Web Application",
+      category: "web",
+      description: "Worked in a team to develop online thrift store for Advanced Programming course using React, Spring Boot, and PostgreSQL. Focused on Software Architecture, Quality and Design Principles.",
+      image: "/images/adpro.png",
+      liveUrl: "",
+      githubUrl: "https://github.com/Pemrograman-lanjut-A1",
+      technologies: ["Spring Boot", "PostgreSQL", "React", "Java", "RESTful API", "JavaScript"]
     }
   ]
 
@@ -132,7 +142,7 @@ export function Projects() {
             ))}
           </ul>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {filteredProjects.map((project) => (
             <div key={project.id} className="bg-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-gray-700">
               <div className="relative h-48 overflow-hidden">
@@ -148,7 +158,7 @@ export function Projects() {
                 <h3 className="text-xl font-semibold text-gray-100 mb-3">{project.title}</h3>
                 <p className="text-gray-300 mb-4 line-clamp-5">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.slice(0, 5).map((tech, index) => (
+                  {project.technologies.slice(0, 10).map((tech, index) => (
                     <span key={index} className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm font-medium border border-blue-500/20">
                       {tech}
                     </span>
