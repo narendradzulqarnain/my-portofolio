@@ -36,6 +36,9 @@ export function Education() {
                   <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Deep Learning</span>
                   <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Computer Networks</span>
                   <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Data Mining</span>
+                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Calculus</span>
+                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Linear Algebra</span>
+                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Statistics and Probability</span>
                 </div>
               </div>
               <div>
