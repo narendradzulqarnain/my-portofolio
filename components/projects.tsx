@@ -11,6 +11,16 @@ export function Projects() {
 
   const projects = [
     {
+      id: 0,
+      title: "IsyaratKu - BISINDO Learning App",
+      category: ["web", "other"],
+      description: "Web-based Indonesian Sign Language learning app featuring real-time gesture recognition using computer vision, MediaPipe, and client-side inference.",
+      image: "/images/isyaratku.png",
+      liveUrl: "https://drive.google.com/file/d/1-4DMw0HATGgKXYxksyD1UPggKzwHAzby/view",
+      githubUrl: "",
+      technologies: ["Computer Vision", "Deep Learning", "MediaPipe", "Web Development", "Client-Side Inference"],
+    },
+    {
       id: 1,
       title: "Biomedical Organ Classification",
       category: "other",
@@ -26,7 +36,7 @@ export function Projects() {
       category: "other",
       description: "ML model predicting customer subscription behavior with 0.7897 AUC score",
       image: "/images/deposito.png",
-      liveUrl: "https://drive.google.com/drive/folders/1ijoLOKxOuNPch-YVB1YttUWgNZs3q0Qc?usp=drive_link", 
+      liveUrl: "https://drive.google.com/drive/folders/1ijoLOKxOuNPch-YVB1YttUWgNZs3q0Qc?usp=drive_link",
       githubUrl: "",
       technologies: ["Python", "Machine Learning", "Data Mining", "Ensemble Methods", "Data Analysis"],
     },
@@ -99,7 +109,13 @@ export function Projects() {
   ]
 
   const filteredProjects =
-    activeFilter === "all" ? projects : projects.filter((project) => project.category === activeFilter)
+    activeFilter === "all"
+      ? projects
+      : projects.filter((project) =>
+        Array.isArray(project.category)
+          ? project.category.includes(activeFilter)
+          : project.category === activeFilter
+      )
 
   const handleLinkClick = (url: string, e: React.MouseEvent) => {
     e.preventDefault()
@@ -120,11 +136,10 @@ export function Projects() {
             {filters.map((filter) => (
               <li
                 key={filter.id}
-                className={`px-6 py-2 rounded-full cursor-pointer transition-all duration-300 font-medium ${
-                  activeFilter === filter.id 
-                    ? "bg-blue-600 text-white shadow-md" 
-                    : "text-gray-300 hover:text-white hover:bg-gray-800"
-                }`}
+                className={`px-6 py-2 rounded-full cursor-pointer transition-all duration-300 font-medium ${activeFilter === filter.id
+                  ? "bg-blue-600 text-white shadow-md"
+                  : "text-gray-300 hover:text-white hover:bg-gray-800"
+                  }`}
                 onClick={() => setActiveFilter(filter.id)}
               >
                 {filter.label}
@@ -136,11 +151,11 @@ export function Projects() {
           {filteredProjects.map((project) => (
             <div key={project.id} className="bg-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-gray-700">
               <div className="relative h-48 overflow-hidden">
-                <Image 
-                  src={project.image || "/placeholder.svg"} 
-                  alt={project.title} 
-                  width={300} 
-                  height={200} 
+                <Image
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  width={300}
+                  height={200}
                   className="w-full h-full object-cover"
                 />
               </div>
